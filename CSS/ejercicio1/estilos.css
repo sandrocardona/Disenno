@@ -1,0 +1,15 @@
+body, p, td {
+    color: brown
+}
+
+.inverso{
+    color: blue
+}
+
+#txt{
+    color: blueviolet;
+}
+
+#celda{
+    color: darkgreen;
+}
