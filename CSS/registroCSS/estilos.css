@@ -1,0 +1,29 @@
+/*ETIQUETAS*/
+header h2{
+    text-align: center;
+}
+div{
+    margin: auto;
+    width: 50%;
+}
+/*ANIDAMIENTOS*/
+div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+div form input{
+    border: none;
+    padding: 10px;
+    border-bottom: #085927 2px solid;
+}
+div form label{
+    border: none;
+    padding: 10px;
+}
+div form button{
+    color: #085927;
+    background-color: #CFF7CD;
+    border: 2px #085927 solid;
+    border-radius: 5px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In FlexBox</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h2>Iniciar sesión</h2>
+    </header>
+    <div>
+        <form action="ejercicio4.html" method="post">
+                <input type="email" name="email" placeholder="Email" aria-label="Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
+                <input type="password" name="pwd" id="pwd" placeholder="Contraseña" pattern=".{8,}" aria-label="Contraseña" required><br>
+                <button type="submit" name="btnEnviar" id="btnEnviar">Iniciar sesión</button>
+                <p class="recuperar">
+                Recuperar contraseña
+                </p>
+        </form>
+    </div>
+
+</body>
+</html>

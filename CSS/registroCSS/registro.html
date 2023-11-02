@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h2>Registrarse</h2>
+    </header>
+    <div>
+        <form action="ejercicio5.html" method="post">
+            <!-- Selección sexo -->
+            <p id="sexo">
+            <label for="hombre">Sr.</label>
+            <input type="radio" name="sexo" id="hombre" value="Sr.">
+            <label for="hombre">Sra.</label>
+            <input type="radio" name="sexo" id="mujer" value="Sra.">
+            </p>
+            <!-- Nombre -->
+            <input type="text" name="nombre" placeholder="Nombre*" aria-label="Nombre" required>
+            <!-- Apellidos -->
+            <input type="text" name="apellidos" placeholder="Apellidos*" aria-label="Apellidos" required>
+            <!-- email -->
+            <input type="email" name="email" id="email" placeholder="E-mail*" aria-label="E-mail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+            <!-- contraseña -->
+            <input type="password" name="pwd" id="pwd" placeholder="Contraseña" pattern=".{8,}" aria-label="Contraseña">
+            <!-- Fecha de nacimiento -->
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" name="fecha" id="fecha" min="1950-01-01" max="2023-01-01">
+            <!-- DNI -->
+            <input type="text" name="dni" id="dni" placeholder="DNI/NIF/NIE*" pattern="((\d{8})([A-Z]))" required>
+            <!-- Dirección -->
+            <input type="text" name="direccion" id="direccion" placeholder="Dirección*" aria-label="Dirección" required>
+            <!-- Código postal -->
+            <input type="text" name="cp" id="cp" placeholder="Código postal*" aria-label="Código postal" required>
+            <!-- Ciudad -->
+            <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad*" aria-label="Ciudad" required>
+            <!-- País -->
+            <select name="pais" id="pais" title="Indique el país" aria-label="pais" required>
+                <option value="España">España</option>
+                <option value="Alemania">Alemania</option>
+                <option value="Finlandia">Finlandia</option>
+            </select>
+            <!-- Provincia -->
+            <select name="provincia" id="provincia" title="Indique el país" aria-label="Provincia" required>
+                <option value="Málaga">Málaga</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Bilbao">Bilbao</option>
+            </select>
+            <!-- Información adicional -->
+            <p id="ad-info">Información adicional</p>
+            <!-- Teléfono móvil -->
+            <input type="text" name="telefono" id="telefono" placeholder="Teléfono móvil*" pattern="[0-9]{9}" aria-label="Teléfono móvil" required>
+            <!-- Checkbox -->
+            <input type="checkbox">Estos datos personales se utilizarán para responder a sus búsquedas, procesar sus pedidos o autorizar el acceso
+            <!-- Botón registrarse -->
+            <button type="submit" name="btnRegistrarse" id="btnRegistrarse">Registrarse</button>
+        </form>
+    </div>
+</body>
+</html>
