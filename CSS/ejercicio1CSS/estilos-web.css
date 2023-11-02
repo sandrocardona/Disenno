@@ -1,17 +1,18 @@
-html{
+/*Etiquetas*/
+body{
     font-family: 'Open Sans';
     font-size:  14px;
     color: black;
     background-color: white;
 }
 
-#cabecera{
+header{
     background-color: #e6e7e8;
     border: #3f3f3f 2px solid;
     border-radius: 5px;
 }
 
-#pie{
+footer{
     background-color: #e6e7e8;
     color: #3f3f3f;
     border: #3f3f3f 2px solid;
@@ -19,14 +20,13 @@ html{
     height: 2rem;
 }
 
-#logo{
-    width: 5rem;
-    height: 4.35rem;
-}
-
 h1,h2,h3,h4,h5,h6{
     font-family: 'Bree Serif';
     color: #00acdd;
+}
+
+nav ul li{
+    list-style-type: none;
 }
 
 header h1{
@@ -34,11 +34,8 @@ header h1{
     font-weight: bold;
 }
 
-#subject{
-    color: #96bc33;
-}
-
-a{
+/*Links*/
+a:link{
     text-decoration-line: none;
     color: #00acdd;
 }
@@ -52,37 +49,52 @@ a:active{
     color: #ea2126;
 }
 
-nav ul li{
-    list-style-type: none;
+/*id*/
+header img#logo{
+    width: 5rem;
+    height: 4.35rem;
 }
 
-section{
+header h1 span#subject{
+    color: #96bc33;
+}
+
+nav ul#main-menu{
+    background-color: #004166;
+    font-weight: bold;
+    border: 2px solid #e6e7e8;
+    border-radius: 5px;
+}
+
+main section#principal{
     border: solid 2px #004166;
     border-radius: 5px;
 }
 
-main section h2{
+main section#principal h2{
     text-align: center;
 }
 
-.news-art{
-    border: 5px #e6e7e8;
-    border-radius: 10px;
-    width: 50%;
-}
-
-article img{
+main section#principal article img{
     width: 30%;
     height: auto;
 }
 
-main section article p{
+main section#principal article p{
     width: 70%;
     height: auto;
     text-align: justify;
 }
 
-#art1{
+main section article:nth-child(2){
     background-color: #e6e7e8;
     border: solid #f58a1e;
+}
+
+/*classname*/
+
+section article.news-art{
+    border: 5px #e6e7e8;
+    border-radius: 10px;
+    width: 50%;
 }
