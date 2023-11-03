@@ -38,24 +38,32 @@
             <input type="text" name="cp" id="cp" placeholder="Código postal*" aria-label="Código postal" required>
             <!-- Ciudad -->
             <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad*" aria-label="Ciudad" required>
-            <!-- País -->
-            <select name="pais" id="pais" title="Indique el país" aria-label="pais" required>
-                <option value="España">España</option>
-                <option value="Alemania">Alemania</option>
-                <option value="Finlandia">Finlandia</option>
-            </select>
             <!-- Provincia -->
+            <p>
+            Provincia:
             <select name="provincia" id="provincia" title="Indique el país" aria-label="Provincia" required>
                 <option value="Málaga">Málaga</option>
                 <option value="Madrid">Madrid</option>
                 <option value="Bilbao">Bilbao</option>
             </select>
+            </p>
+            <!-- País -->
+            <p>
+            País:
+            <select name="pais" id="pais" title="Indique el país" aria-label="pais" required>
+                <option value="España">España</option>
+                <option value="Alemania">Alemania</option>
+                <option value="Finlandia">Finlandia</option>
+            </select>
+            </p>
             <!-- Información adicional -->
             <p id="ad-info">Información adicional</p>
             <!-- Teléfono móvil -->
             <input type="text" name="telefono" id="telefono" placeholder="Teléfono móvil*" pattern="[0-9]{9}" aria-label="Teléfono móvil" required>
             <!-- Checkbox -->
-            <input type="checkbox">Estos datos personales se utilizarán para responder a sus búsquedas, procesar sus pedidos o autorizar el acceso
+            <p>
+                <input type="checkbox">Estos datos personales se utilizarán para responder a sus búsquedas, procesar sus pedidos o autorizar el acceso
+            </p>
             <!-- Botón registrarse -->
             <button type="submit" name="btnRegistrarse" id="btnRegistrarse">Registrarse</button>
         </form>
