@@ -18,7 +18,7 @@ div form{
 div form input{
     border: none;
     padding: 10px;
-    border-bottom: #085927 2px solid;
+    border-bottom: #085927 1px solid;
 }
 div form input::placeholder{
     color: black;
