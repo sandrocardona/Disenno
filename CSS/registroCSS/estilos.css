@@ -5,6 +5,7 @@ header h2{
 div{
     margin: auto;
     width: 50%;
+    border: 2px solid black;
 }
 /*ANIDAMIENTOS*/
 div form{
@@ -37,6 +38,7 @@ div form button{
     border-radius: 5px;
     width: 8rem;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
