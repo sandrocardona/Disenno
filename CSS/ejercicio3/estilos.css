@@ -8,8 +8,8 @@ div#contenido{
 div#contenido header{
     background-color: blue;
     height: 2rem;
-    margin-top: 0.5rem;
     text-align: center;
+    padding-top: 0.5rem;
 }
 div#contenido main{
     display: flex;
@@ -20,6 +20,7 @@ div#contenido main article{
     height: 10rem;
     text-align: center;
     margin-top: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 div#contenido main nav{
@@ -28,6 +29,7 @@ div#contenido main nav{
     text-align: center;
     height: 2rem;
     margin-top: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 div#contenido main aside{
@@ -35,6 +37,7 @@ div#contenido main aside{
     height: 2rem;
     margin-top: 0.5rem;
     text-align: center;
+    padding-top: 0.5rem;
 }
 
 footer{
@@ -42,4 +45,43 @@ footer{
     height: 2rem;
     margin-top: 0.5rem;
     text-align: center;
+    padding-top: 0.5rem;
+}
+
+@media (min-width:768px){
+    div#contenido{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    div#contenido header{
+        width: 100%;
+        padding-top: 0.5rem;
+    }
+    div#contenido footer{
+        width: 100%;
+        padding-top: 0.5rem;
+    }
+    div#contenido main{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    div#contenido main nav{
+        width: 32.666%;
+        height: 10rem;
+        padding-top: 0.5rem;
+    }
+    div#contenido main article{
+        width: 32.666%;
+        height: 10rem;
+        padding-top: 0.5rem;
+    }
+    div#contenido main aside{
+        width: 32.666%;
+        height: 10rem;
+        padding-top: 0.5rem;
+    }
 }
