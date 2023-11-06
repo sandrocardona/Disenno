@@ -23,7 +23,14 @@ div form label{
 }
 div form button{
     color: #085927;
+    font-weight: bold;
     background-color: #CFF7CD;
     border: 2px #085927 solid;
     border-radius: 5px;
+    min-width: 20%;
+    margin: auto;
+    height: 30px;
+}
+div form p select{
+    min-width: 30%;
 }
