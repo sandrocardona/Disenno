@@ -1,0 +1,45 @@
+
+div#contenido{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+div#contenido header{
+    background-color: blue;
+    height: 2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+div#contenido main{
+    display: flex;
+    flex-direction: column;
+}
+div#contenido main article{
+    background-color: blueviolet;
+    height: 10rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+div#contenido main nav{
+    background-color: yellow;
+    order: -1;
+    text-align: center;
+    height: 2rem;
+    margin-top: 0.5rem;
+}
+
+div#contenido main aside{
+    background-color: aqua;
+    height: 2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+footer{
+    background-color: blue;
+    height: 2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
