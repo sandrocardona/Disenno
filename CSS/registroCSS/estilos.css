@@ -5,21 +5,31 @@ header h2{
 div{
     margin: auto;
     width: 50%;
+    border: 2px solid black;
 }
 /*ANIDAMIENTOS*/
 div form{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    max-width: 20rem;
+    margin: auto;
 }
 div form input{
     border: none;
     padding: 10px;
-    border-bottom: #085927 2px solid;
+    border-bottom: #085927 1px solid;
+}
+div form input::placeholder{
+    color: black;
 }
 div form label{
     border: none;
-    padding: 10px;
+    margin-top: 1rem;
+}
+div form p select{
+    width: 6rem;
+    display: flex;
 }
 div form button{
     color: #085927;
@@ -27,10 +37,5 @@ div form button{
     background-color: #CFF7CD;
     border: 2px #085927 solid;
     border-radius: 5px;
-    min-width: 20%;
-    margin: auto;
-    height: 30px;
 }
-div form p select{
-    min-width: 30%;
-}
+

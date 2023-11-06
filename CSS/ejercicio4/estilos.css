@@ -1,0 +1,25 @@
+/*ETIQUETAS*/
+header{
+    background-color: orangered;
+    text-align: center;
+    font-weight: bold;
+}
+div{
+    background-color: blue;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    font-weight: bold;
+}
+/*CLASES*/
+aside.uno{
+    background-color: yellow;
+    text-align: center;
+    font-weight: bold;
+}
+aside.dos{
+    background-color: palevioletred;
+    text-align: center;
+    font-weight: bold;
+}
