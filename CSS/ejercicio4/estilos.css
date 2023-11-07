@@ -1,32 +1,37 @@
-div header{
+* {
+    box-sizing: border-box;
+}
+
+div#contenido{
+    display: flex;
+    flex-direction: column;
+}
+div#contenido header#cabecera{
     background-color: orangered;
     text-align: center;
     font-weight: bold;
     height: 2rem;
     padding-top: 0.5rem;
 }
-div p{
+div#contenido article#main{
     background-color: blue;
-    margin-block-start: 0;
-    margin-block-end: 0;
     padding: 1rem;
 }
-div footer{
+div#contenido footer#pie{
     background-color: green;
     text-align: center;
     font-weight: bold;
     height: 2rem;
     padding-top: 0.5rem;
 }
-/*CLASES*/
-aside.uno{
+aside#aside1{
     background-color: yellow;
     text-align: center;
     font-weight: bold;
     height: 2rem;
     padding-top: 0.5rem;
 }
-aside.dos{
+aside#aside2{
     background-color: palevioletred;
     text-align: center;
     font-weight: bold;
@@ -35,23 +40,41 @@ aside.dos{
 }
 
 @media (min-width:600px){
-    div{
+    div#contenido{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
     }
-    div header{
-        width: 100%;
+    div#contenido header#cabecera{
+        flex: 100%;
     }
-    div p{
-        width: 100%;
-        padding: 1rem 0rem 1rem 0rem;
-        text-align: left;
+    div#contenido footer#pie{
+        flex: 100%;
     }
-    div aside{
-        width: 49%;
+    div#contenido aside{
+        flex: 50%;
     }
-    div footer{
-        width: 100%;
+}
+
+@media (min-width:800px){
+    div#contenido aside{
+        flex: 15%;
+    }
+    div#contenido header#cabecera{
+        background-color: orange;
+        order: 1;
+    }
+    div#contenido footer#pie{
+        order: 5;
+    }
+    div#contenido aside#aside1{
+        order: 2;
+    }
+    div#contenido aside#aside2{
+        order: 4;
+    }
+    div#contenido article{
+        flex: 40%;
+        order: 3;
     }
 }

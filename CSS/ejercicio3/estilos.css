@@ -6,7 +6,7 @@ div#contenido{
     padding: 0.5rem;
 }
 div#contenido header{
-    background-color: blue;
+    background-color: rgb(89, 89, 221);
     height: 2rem;
     text-align: center;
     padding-top: 0.5rem;
@@ -24,7 +24,7 @@ div#contenido main article{
 }
 
 div#contenido main nav{
-    background-color: yellow;
+    background-color: orange;
     order: -1;
     text-align: center;
     height: 2rem;
@@ -33,7 +33,7 @@ div#contenido main nav{
 }
 
 div#contenido main aside{
-    background-color: aqua;
+    background-color: lightgreen;
     height: 2rem;
     margin-top: 0.5rem;
     text-align: center;
@@ -41,7 +41,7 @@ div#contenido main aside{
 }
 
 footer{
-    background-color: blue;
+    background-color: rgb(89, 89, 221);
     height: 2rem;
     margin-top: 0.5rem;
     text-align: center;
@@ -49,39 +49,20 @@ footer{
 }
 
 @media (min-width:768px){
-    div#contenido{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    div#contenido header{
-        width: 100%;
-        padding-top: 0.5rem;
-    }
-    div#contenido footer{
-        width: 100%;
-        padding-top: 0.5rem;
-    }
     div#contenido main{
-        width: 100%;
-        display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
     }
     div#contenido main nav{
-        width: 32.666%;
         height: 10rem;
-        padding-top: 0.5rem;
+        flex-grow: 1;
     }
     div#contenido main article{
-        width: 32.666%;
         height: 10rem;
-        padding-top: 0.5rem;
+        flex-grow: 4;
+        margin: 0.5rem 0.5rem 0 0.5rem;
     }
     div#contenido main aside{
-        width: 32.666%;
         height: 10rem;
-        padding-top: 0.5rem;
+        flex-grow: 1;
     }
 }
