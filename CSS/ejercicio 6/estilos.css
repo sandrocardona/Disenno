@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+header h1{color: brown;}
+
+section#ofertas{
+    display: flex;
+    flex-direction: column;
+}
+section#ofertas > article{
+    background-color: burlywood;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+section#ofertas > article > img{
+    height: 344px;
+    width: 500px;
+}
