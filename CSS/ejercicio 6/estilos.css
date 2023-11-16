@@ -27,6 +27,7 @@ section#ofertas > article > h3{
 section#ofertas > article > img{
     order: -1;
     width: 100%;
+    flex:0;
 }
 
 section#ofertas > article > ul{
