@@ -1,18 +1,53 @@
 *{
     box-sizing: border-box;
 }
-header h1{color: brown;}
+body{
+    font-size: 18px;
+}
 
 section#ofertas{
     display: flex;
     flex-direction: column;
+/*     flex:1 1 auto; */
 }
+
 section#ofertas > article{
-    background-color: burlywood;
     border: 1px solid grey;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
 }
+
+section#ofertas > article > h3{
+    order: -2;
+    align-self: center;
+}
+
 section#ofertas > article > img{
-    height: 344px;
-    width: 500px;
+    order: -1;
+    width: 100%;
+}
+
+section#ofertas > article > ul{
+    text-align: left;
+}
+
+section#ofertas > article > button{
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 10px black;
+    padding: 1rem;
+    width: 50%;
+    align-self: center;
+}
+
+@media (min-width:720px){
+    header > h1{
+        color: blue;
+    }
+    section#ofertas{
+        flex-direction: row;
+        flex: 50%;
+    }
 }
