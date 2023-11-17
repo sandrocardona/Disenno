@@ -1,3 +1,7 @@
+/* INICIO MODS 
+/* el código introducido aquí es el código que yo he escrito */
+/* FIN MODS */
+
 *{box-sizing: border-box;}
 
 body{
@@ -6,11 +10,20 @@ body{
   color: black;
   background-color: white;
 }
-
+/* MODS */
+div#content{
+  display: flex;
+  flex-direction: column;
+}
+/* FIN MODS */
 header, footer{
   background-color: #e6e7e8;
   border: 2px solid #3f3f3f;
   border-radius: 5px;
+  /* MODS */
+  display: flex;
+  justify-content: center;
+  /*FIN MODS*/
 }
 
 footer{
@@ -60,6 +73,9 @@ nav ul li{
 }
 nav ul{
 	padding-left: 0;
+  /* INICIO MODS */
+  visibility: hidden;
+  /* FIN MODS */
 }
 
 nav#main-menu{
@@ -67,16 +83,30 @@ nav#main-menu{
   font-weight: bold;
   border: 2px solid #e6e7e8;
   border-radius: 5px;
+  /* INICIO MODS */
+  display: flex;
+  justify-content: center;
+  /* FIN MODS */
 }
 
 main section#principal{
   border: 2px solid #004166;
   border-radius: 5px;
+  /* INICIO MODS */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* FIN MODS */
 }
 
 main section article.news-art{
   border: 5px solid #e6e7e8;
   border-radius: 0.8rem;
+  /* INICIO MODS */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* FIN MODS */
 }
 div#content main section#principal article#primerElemento{
   background-color: #e6e7e8;
@@ -90,4 +120,28 @@ div#content main section article.news-art img{
 
 div#content main section article.news-art p{
   padding: 0 1rem;
+}
+
+/* codigo de la maetsra x meet 
+div#content > nav#main-menu > input, div#content > nav#main-menu > ul{
+	display:none;
+}
+div#content > nav#main-menu > input:checked + ul{
+	display: block;
+	margin-top:0;
+}
+/*
+
+/* INICIO MODS */
+
+@media(min-width:760px){
+  h2{
+    color: brown;
+  }
+  header, footer{
+    justify-content: left;
+  }
+  main section article.news-art{
+    
+  }
 }
