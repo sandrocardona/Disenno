@@ -5,9 +5,15 @@ body{
     font-size: 18px;
 }
 
+div#contenido{
+    display: flex;
+    flex-direction: column;
+}
+
 section#ofertas{
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 /*     flex:1 1 auto; */
 }
 
@@ -27,7 +33,7 @@ section#ofertas > article > h3{
 section#ofertas > article > img{
     order: -1;
     width: 100%;
-    flex:0;
+    height: auto; /* para que no deforme la img */
 }
 
 section#ofertas > article > ul{
@@ -41,6 +47,7 @@ section#ofertas > article > button{
     padding: 1rem;
     width: 50%;
     align-self: center;
+    margin-top: auto;
 }
 
 @media (min-width:720px){
@@ -49,6 +56,9 @@ section#ofertas > article > button{
     }
     section#ofertas{
         flex-direction: row;
-        flex: 50%;
+        flex-wrap: wrap;
+    }
+    section#ofertas > article{
+        flex: 0 1 30%;
     }
 }
