@@ -24,13 +24,14 @@ ul{
 }
 /*Hacemos la cabecera flexible*/
 header{
-
 	/*La cabecera ocupa todo el ancho de la página*/
-
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 /*La hamburguesa la colocamos al principio*/
 header > nav#menu-principal{
-	
+	order: -1;
 	padding-right: 0.5rem;
 }
 header > nav#menu-principal > label > span{
@@ -38,6 +39,12 @@ header > nav#menu-principal > label > span{
 	font-size: 2rem;
 }
 /*El input de la hamburguesa tiene que estar oculto*/
+header > nav#menu-principal > input, header > nav#menu-principal > ul{
+	display: none;
+}
+header > nav#menu-principal > input:checked + ul{
+	display: block;
+}
 
 /*El menu principal es flexible*/
 header > nav#menu-principal > ul#menu{
