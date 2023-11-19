@@ -73,9 +73,6 @@ nav ul li{
 }
 nav ul{
 	padding-left: 0;
-  /* INICIO MODS */
-  visibility: hidden;
-  /* FIN MODS */
 }
 
 nav#main-menu{
@@ -122,7 +119,22 @@ div#content main section article.news-art p{
   padding: 0 1rem;
 }
 
-/* codigo de la maetsra x meet 
+/* INICIO MODS */
+
+div#content > nav#main-menu > input, div#content > nav#main-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+div#content > nav#main-menu > input, div#content > nav#main-menu > span{
+  width: 2rem;
+  height: 2rem;
+}
+
+/* FIN MODS */
+
+/* codigo de la maetsra x meet */
 div#content > nav#main-menu > input, div#content > nav#main-menu > ul{
 	display:none;
 }
@@ -130,7 +142,7 @@ div#content > nav#main-menu > input:checked + ul{
 	display: block;
 	margin-top:0;
 }
-/*
+
 
 /* INICIO MODS */
 
@@ -142,6 +154,35 @@ div#content > nav#main-menu > input:checked + ul{
     justify-content: left;
   }
   main section article.news-art{
-    
+    flex-direction: row wrap;
   }
+  main section article.news-art h3{
+    align-self: flex-start;
+    width: 100%;
+  }
+  main section article.news-art img{ /* Imagen */
+    flex-basis: 40%;
+    align-self: flex-start;
+  }
+  main section article.news-art p{ /* texto */
+    flex-basis: 40%;
+  }
+
+}
+
+@media(min-width:1024px){
+  h2{
+    color:#96bc33
+  }
+  main section#principal{
+    flex-direction: row wrap;
+  }
+  div#content main section#principal article#primerElemento{
+    flex: 100%;
+  }
+  div#content main section#principal article.news-art{
+    flex: 40%;
+  }
+
+
 }
