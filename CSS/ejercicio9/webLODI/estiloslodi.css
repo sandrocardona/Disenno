@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid blue;
+}
+
+header>nav#menu-principal>ul#menu,header>nav#menu-principal>input{
+    display: none;
+    order: 1;
+}
+
+header>nav#menu-principal>label#menu-hamburger{
+    order: 1;
+}
+
+header>picture{
+    order: 3;
+}
+
+
+
+
+/* ======== PARA VER SOLO EL MENÚ ========= */
+main,footer{
+    display: none;
+}
