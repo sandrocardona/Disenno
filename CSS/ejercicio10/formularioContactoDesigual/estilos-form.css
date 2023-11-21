@@ -25,16 +25,17 @@ header{
 
 header > div#cabecera{
     display: flex;
-    flex-flow: row;
-    justify-content: space-around;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     flex: 100%;
+    padding: 0.5rem;
 }
 header > nav#menu-principal > ul#menu{
     display: none;
 }
 
 header > div#cabecera > picture#logo-cabecera{ /* LOGO */
-    flex: 0 30%;
+    flex: 0 40%;
     height: auto;
 }
 
@@ -47,12 +48,21 @@ header > div#cabecera > nav#bloque-iconos{ /* ICONOS COMPRA Y BUSCAR */
     order: 2;
     display: flex;
     flex-flow: row nowrap;
+    text-align: center;
 }
 
 header > div#cabecera > nav#bloque-iconos > ul{
     display: flex;
-    flex-flow: row;
-    justify-content: space-between;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+header > div#cabecera > nav#bloque-iconos > ul > li{
+    align-self: flex-start;
+}
+
+header > div#cabecera > nav#bloque-iconos > ul > li > a > i{
+
 }
 
 header > nav#menu-principal{
@@ -70,7 +80,6 @@ header > nav#menu-principal > div#hamburguesa{
 /* ============================   MAIN  ============================ */
 
 main{
-    border: 1px solid red;
     display: flex;
     flex-flow: column;
 }
@@ -84,7 +93,7 @@ main > section#form-contacto{
 main > section#form-contacto > form#contacto{
     display: flex;
     flex-flow: column;
-    width: 40%;
+    width: 50%;
 }
 
 main > section#form-contacto > h2{
