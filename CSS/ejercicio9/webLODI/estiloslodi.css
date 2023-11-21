@@ -1,6 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+div#contenido{
+    display: flex;
+    flex-direction: column;
+}
+
 header{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
     justify-content: space-around;
     border: 1px solid blue;
 }
@@ -22,6 +33,6 @@ header>picture{
 
 
 /* ======== PARA VER SOLO EL MENÚ ========= */
-main,footer{
+/* main,footer{
     display: none;
-}
+} */
