@@ -121,11 +121,14 @@ div#content main section article.news-art p{
 
 /* INICIO MODS */
 
-div#content > nav#main-menu > input, div#content > nav#main-menu{
+div#content > nav#main-menu{
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
+}
+div#content > nav#main-menu > label > span {
+  font-size: 1.5rem;
 }
 div#content > nav#main-menu > input, div#content > nav#main-menu > span{
   width: 2rem;
@@ -154,11 +157,11 @@ div#content > nav#main-menu > input:checked + ul{
     justify-content: left;
   }
   main section article.news-art{
-    flex-direction: row wrap;
+    flex-flow: row wrap;
   }
   main section article.news-art h3{
     align-self: flex-start;
-    width: 100%;
+    flex: 100%;
   }
   main section article.news-art img{ /* Imagen */
     flex-basis: 40%;
