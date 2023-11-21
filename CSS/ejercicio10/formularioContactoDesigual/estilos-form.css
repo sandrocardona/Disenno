@@ -6,8 +6,108 @@ body{
     font-size: 16px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ============================ VERSIÓN MÓVIL ============================ */
+
 header{
     display: flex;
     flex-flow: column;
+}
+
+header > div#cabecera{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    flex: 100%;
+}
+header > nav#menu-principal > ul#menu{
+    display: none;
+}
+
+header > div#cabecera > picture#logo-cabecera{ /* LOGO */
+    flex: 0 30%;
+    height: auto;
+}
+
+header > div#cabecera > picture#logo-cabecera img{ /* FOTO DEL LOGO */
+    width: 100%;
+    order: 1;
+}
+
+header > div#cabecera > nav#bloque-iconos{ /* ICONOS COMPRA Y BUSCAR */
+    order: 2;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+header > div#cabecera > nav#bloque-iconos > ul{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+header > nav#menu-principal{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+header > nav#menu-principal > div#hamburguesa{
+    display: flex;
+    flex-flow: column;
+}
+
+/* ============================   MAIN  ============================ */
+
+main{
     border: 1px solid red;
+    display: flex;
+    flex-flow: column;
+}
+
+main > section#form-contacto{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+main > section#form-contacto > form#contacto{
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+}
+
+main > section#form-contacto > h2{
+    margin-bottom: none;
+}
+
+main > section#form-contacto > form#contacto > label{
+    display: none;
+}
+main > section#form-contacto > form#contacto > span{
+    margin: 0 0.5rem;
+    font-size: 0.8rem;
+    color: gray;
+}
+main > section#form-contacto > form#contacto > input{
+    margin: 0.5rem;
+}
+main > section#form-contacto > form#contacto > select{
+    margin: 0.5rem;
+}
+main > section#form-contacto > form#contacto > textarea{
+    margin: 0.5rem;
+}
+main > section#form-contacto > form#contacto:nth-child(1){
+    
 }
