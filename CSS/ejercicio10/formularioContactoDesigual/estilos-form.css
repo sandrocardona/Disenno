@@ -11,6 +11,10 @@ a{
     color: black;
 }
 
+ul{
+    padding-left: 0;
+}
+
 li{
     text-decoration: none;
     list-style: none;
@@ -20,53 +24,45 @@ li{
 
 header{
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header > div#cabecera{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    flex: 100%;
-    padding: 0.5rem;
-}
 header > nav#menu-principal > ul#menu{
     display: none;
 }
-
-header > div#cabecera > picture#logo-cabecera{ /* LOGO */
+header > nav#menu-principal{
+    flex: 100%;
+}
+header > picture#logo-cabecera img{ /* LOGO */
     flex: 0 40%;
     height: auto;
 }
 
-header > div#cabecera > picture#logo-cabecera img{ /* FOTO DEL LOGO */
+header > picture#logo-cabecera img{ /* FOTO DEL LOGO */
     width: 100%;
     order: 1;
 }
 
-header > div#cabecera > nav#bloque-iconos{ /* ICONOS COMPRA Y BUSCAR */
-    order: 2;
-    display: flex;
-    flex-flow: row nowrap;
-    text-align: center;
+header > nav#bloque-iconos{ /* ICONOS COMPRA Y BUSCAR */
+
+border: 1px solid orange;
+flex: 0 20%;
 }
 
-header > div#cabecera > nav#bloque-iconos > ul{
+header > nav#bloque-iconos > ul{
     display: flex;
-    flex-flow: row nowrap;
+    border: 1px solid black;
     justify-content: space-evenly;
 }
 
-header > div#cabecera > nav#bloque-iconos > ul > li{
-    align-self: flex-start;
-}
-
-header > div#cabecera > nav#bloque-iconos > ul > li > a > i{
-
+header > nav#bloque-iconos > ul > li{
+    border: 1px solid blue;
 }
 
 header > nav#menu-principal{
-    width: 100%;
+    flex: 100%;
     text-align: center;
     background-color: black;
     color: white;
@@ -93,7 +89,7 @@ main > section#form-contacto{
 main > section#form-contacto > form#contacto{
     display: flex;
     flex-flow: column;
-    width: 50%;
+    width: 0 50%;
 }
 
 main > section#form-contacto > h2{
@@ -118,5 +114,11 @@ main > section#form-contacto > form#contacto > textarea{
     margin: 0.5rem;
 }
 main > section#form-contacto > form#contacto:nth-child(1){
-    
+
+}
+
+/* PARA NO VER FOOTER */
+
+footer{
+    display: none;
 }
