@@ -1,41 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+}
+
 /*ETIQUETAS*/
 header h2{
     text-align: center;
 }
 div{
-    margin: auto;
-    width: 50%;
-    border: 2px solid black;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
 }
 /*ANIDAMIENTOS*/
-div form{
+div > form{
     display: flex;
     flex-direction: column;
+    flex: 0 100%;
     justify-content: space-evenly;
     max-width: 20rem;
     margin: auto;
+    padding: 1rem;
+    border: 1px solid blue;
 }
-div form input{
+div > form > input{
     border: none;
     padding: 10px;
-    border-bottom: #085927 1px solid;
+    border-bottom: black 1px solid;
 }
-div form input::placeholder{
+div > form > input::placeholder{
     color: black;
 }
-div form label{
+div > form > label{
     border: none;
+    margin-bottom: 1rem;
+}
+
+select#pais, select#provincia{
     margin-top: 1rem;
+    padding: 0.5rem;
 }
-div form p select{
-    width: 6rem;
-    display: flex;
-}
-div form button{
-    color: #085927;
+div > form > button{
+    color: black;
     font-weight: bold;
-    background-color: #CFF7CD;
-    border: 2px #085927 solid;
+    border: 2px black solid;
     border-radius: 5px;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+div > form > button:hover{
+    color: black;
+    border: 2px black solid;
+    background-color: grey;
+}
+
+div > form > input:nth-child(1){
+    border: 1px solid red;
+}
+
+@media(min-width:600px){
+    div{
+
+    }
+    div > form{
+        flex-flow: row wrap;
+        margin: 0;
+        align-self: center;
+    }
+    div > form > input{
+        flex: 0 49%;
+        border: 1px solid olivedrab;
+    }
 }
 

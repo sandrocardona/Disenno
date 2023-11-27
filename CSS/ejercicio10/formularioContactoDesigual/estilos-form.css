@@ -35,8 +35,8 @@ header > nav#menu-principal > ul#menu{
 header > nav#menu-principal{
     flex: 100%;
 }
-header > picture#logo-cabecera img{ /* LOGO */
-    flex: 0 40%;
+header > picture#logo-cabecera{ /* LOGO */
+    flex: 0 30%;
     height: auto;
 }
 
@@ -47,18 +47,19 @@ header > picture#logo-cabecera img{ /* FOTO DEL LOGO */
 
 header > nav#bloque-iconos{ /* ICONOS COMPRA Y BUSCAR */
 
-border: 1px solid orange;
+/* border: 1px solid orange; */
 flex: 0 20%;
 }
 
 header > nav#bloque-iconos > ul{
     display: flex;
-    border: 1px solid black;
+/*     border: 1px solid black; */
     justify-content: space-evenly;
 }
 
-header > nav#bloque-iconos > ul > li{
-    border: 1px solid blue;
+header > nav#bloque-iconos > ul > li > a{
+/*     border: 1px solid blue; */
+    font-size: 2rem;
 }
 
 header > nav#menu-principal{
@@ -71,6 +72,10 @@ header > nav#menu-principal{
 header > nav#menu-principal > div#hamburguesa{
     display: flex;
     flex-flow: column;
+}
+
+header > nav#menu-principal > div#hamburguesa{
+
 }
 
 /* ============================   MAIN  ============================ */
@@ -113,12 +118,19 @@ main > section#form-contacto > form#contacto > select{
 main > section#form-contacto > form#contacto > textarea{
     margin: 0.5rem;
 }
-main > section#form-contacto > form#contacto:nth-child(1){
 
+main > section#form-contacto > form#contacto > input:last-child{
+    margin: 0.5rem;
+    background-color: black;
+    color: white;
 }
 
 /* PARA NO VER FOOTER */
 
 footer{
     display: none;
+}
+
+@media(min-width:600px){
+    /* Se hará más adelante la versión de escritorio */
 }
