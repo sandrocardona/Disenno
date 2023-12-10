@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+/* menu hamburguesa */
+
+header > nav#menu{
+    order: 1;
+}
+
+header > nav#menu > img{
+    width: 1rem;
+    height: auto;
+}
+
+/* iconos bolsa y corazon */
+
+header > nav#bolsa-corazon{
+    order: 3;
+    display: flex;
+}
+header > nav#bolsa-corazon > img{
+    width: 1rem;
+    height: auto;
+}
+
+/* logo kenay */
+
+header > div#logo{
+    order: 2;
+}
+
+header > div#logo > img{
+    width: 50%;
+    height: auto;
+}
+
+/* barra de búsqueda */
+
+header > div#buscador{
+    order: 4;
+    flex: 0 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+header > div#buscador > input{
+    border: none;
+    background-color: lightgray;
+    flex: 0 80%;
+    text-align: center;
+}
+
+header > div#buscador > img{
+    width: 1rem;
+    height: auto;
+    position: absolute;
+    flex: 0 5%;
+    margin-right: 75%;
+}
