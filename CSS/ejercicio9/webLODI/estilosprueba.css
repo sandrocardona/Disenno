@@ -41,6 +41,9 @@ header > nav#menu-principal > input#menu-hamburger{
 }
 
 /* lista del menu */
+header > nav#menu-principal{
+    border: 1px solid red;
+}
 
 header > nav#menu-principal > ul#menu{
     display: none;
