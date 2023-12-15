@@ -101,7 +101,7 @@ header > nav#menu-principal > label > input#hamburguer-icon:checked ~ ul#menu{
     background-color: lightslategray;
     top: 2.75rem;
     padding-left: 0.1rem;
-    width: 750px;
+    width: 50rem;
 }
 header > nav#menu-principal > label > input#hamburguer-icon:checked ~ ul#menu > li{
     padding: 0.5rem;
