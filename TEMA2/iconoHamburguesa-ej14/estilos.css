@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+}
+
+/* MENÚ HAMBURGUESA */
+
+input{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    background-color: lightslategray;
+    cursor: pointer;
+}
+
+label > span.hamburguer-line{
+    position: absolute;
+    top: 2.75rem;
+    left: 1rem;
+    width: 4rem;
+    height: .4rem;
+    background: white;
+    transition: background 0s .25s;
+}
+
+label > span.hamburguer-line:nth-child(2){
+    top: 1.25rem;
+    transition: all 1s ease;
+}
+
+label > span.hamburguer-line:nth-child(3){
+    top: 4.25rem;
+    transition: all 1s ease;
+}
+
+/* TRANSICIONES MENÚ HAMBURGUESA */
+
+label>input:checked ~ span.hamburguer-line:nth-child(4){
+    background: none;
+    transition-delay: 0s;
+}
+
+label>input:checked ~ span.hamburguer-line:nth-child(2){
+    transition: top 1s, rotate 1s;
+    top: 2.75rem;
+    rotate: 45deg;
+    transition-delay: 0s, 1s;
+}
+
+label>input:checked ~ span.hamburguer-line:nth-child(3){
+    transition: top 1s, rotate 1s;
+    top: 2.75rem;
+    rotate: -45deg;
+    transition-delay: 0s, 1s;
+}
