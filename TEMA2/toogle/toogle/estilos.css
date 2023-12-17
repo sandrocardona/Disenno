@@ -11,6 +11,8 @@ main {
     transition: margin-left 0.5s ease;
 }
 
+/* menú */
+
 nav#main-menu {
     display: flex;
     flex-flow: row;
@@ -20,6 +22,8 @@ nav#main-menu {
 nav#main-menu label {
     transition: margin-left 0.5s ease;
 }
+
+/* UL menú */
 
 nav#main-menu ul {
     position: fixed;
@@ -33,6 +37,8 @@ nav#main-menu ul {
     order: -1;
     background-color: #222625;
 }
+
+/* items menú */
 
 nav#main-menu a {
     text-decoration: none;
@@ -63,6 +69,8 @@ input#toggle-menu:checked ~ header > nav#main-menu > ul {
 input#toggle-menu:checked ~ header > nav#main-menu > label, input#toggle-menu:checked ~ main {
     margin-left: 10rem;
 }
+
+/* ICONO MENÚ */
 
 svg#boton-hamburguesa {
     cursor: pointer;
