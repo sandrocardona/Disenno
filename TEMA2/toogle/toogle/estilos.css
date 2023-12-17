@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #add6ef;
+}
+
+main {
+    transition: margin-left 0.5s ease;
+}
+
+nav#main-menu {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+
+nav#main-menu label {
+    transition: margin-left 0.5s ease;
+}
+
+nav#main-menu ul {
+    position: fixed;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 0;
+    transition: width 0.5s ease;
+    overflow: hidden;
+    order: -1;
+    background-color: #222625;
+}
+
+nav#main-menu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    background-color: #222625;
+    border-bottom: 1px solid #fff;
+}
+
+nav#main-menu a:hover {
+    background-color: #fff;
+    color: #222625;
+}
+
+nav#main-menu label {
+    margin-left: 0;
+}
+
+input#toggle-menu {
+    display: none;
+}
+
+input#toggle-menu:checked ~ header > nav#main-menu > ul {
+    width: 10rem;
+}
+
+input#toggle-menu:checked ~ header > nav#main-menu > label, input#toggle-menu:checked ~ main {
+    margin-left: 10rem;
+}
+
+svg#boton-hamburguesa {
+    cursor: pointer;
+    color: white;
+    background-color: #1a2f2a;
+    border-radius: 10%;
+    margin: 10px;
+}
