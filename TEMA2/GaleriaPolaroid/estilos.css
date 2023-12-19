@@ -1,0 +1,68 @@
+/* GENERAL */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    background-image: url("./Texture-background/99.jpg");
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+/* MAIN */
+
+/* ul */
+
+div.row > div.large-12 > ul.polaroids{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* lista */
+
+div.row > div.large-12 > ul.polaroids > li{
+    background-color: white;
+    margin: 1rem;
+    height: 13rem;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid burlywood;
+    transform: rotate(10deg);
+}
+
+/* titulo e imagenes en columna */
+
+div.row > div.large-12 > ul.polaroids > li > a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+/* titulo de las imagenes */
+
+div.row > div.large-12 > ul.polaroids > li > a[title]::after{
+    content: attr(title);
+    padding-top: 1.5rem;
+}
+
+/* imagenes */
+
+div.row > div.large-12 > ul > li > a > img{
+    width: 160px;
+    height: auto;
+    padding: 0.3rem;
+}
+
+/* TRANSICIONES */
+
+div.row > div.large-12 > ul.polaroids > li:hover{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+div.row > div.large-12 > ul.polaroids > li{
+    transition-duration: 0.5s;
+}
