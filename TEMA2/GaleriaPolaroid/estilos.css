@@ -28,7 +28,18 @@ div.row > div.large-12 > ul.polaroids > li{
     display: flex;
     flex-flow: column;
     border: 1px solid burlywood;
-    transform: rotate(10deg);
+}
+
+div.row > div.large-12 > ul.polaroids > li:nth-child(2n){
+    transform: rotate(3deg);
+}
+
+div.row > div.large-12 > ul.polaroids > li:nth-child(2n + 1){
+    transform: rotate(-3deg);
+}
+
+div.row > div.large-12 > ul.polaroids > li:nth-child(3n){
+    transform: rotate(0deg);
 }
 
 /* titulo e imagenes en columna */
