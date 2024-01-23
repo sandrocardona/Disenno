@@ -33,15 +33,16 @@ section > button > svg{
     height: auto;
     width: 1rem;
     fill: white;
+    cursor: pointer;
+    margin-right: 0.5rem;
 }
-
 
 /* BARRA SLIDER */
 
 input[type=range] {
     -webkit-appearance: none;
     margin: 10px 0;
-    width: 60%;
+    width: 20%;
 }
 
 input[type=range]:focus {
