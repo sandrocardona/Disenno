@@ -37,6 +37,10 @@ section > button > svg{
 
 }
 
+section > p#timer{
+
+}
+
 /* iconos */
 section > button#play{
     margin-top: auto;
