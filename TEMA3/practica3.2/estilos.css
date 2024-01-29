@@ -1,0 +1,45 @@
+body{
+display: grid;
+place-content: center;
+height: 100vh;
+background-color: #e91e63 ;
+}
+
+div{
+/*     border: red solid 1px; */
+}
+
+div #play{
+    color: black;
+    border: 2px solid black;
+    border-radius: 10% ;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+div #play:hover{
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+}
+
+div #mute{
+    color: black;
+    border: 2px solid black;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+div #mute:hover{
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+}
+
+div #slider{
+    border: 1px solid blue;
+    background: black;
+    background-color: black;
+    cursor: pointer;
+}
