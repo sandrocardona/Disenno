@@ -21,7 +21,7 @@ h1{
     padding: 1rem;
     margin: auto;
     display: flex;
-/*     justify-content: space-evenly; */
+/*     justify-content: space-between; */
 }
 
 .botones{
@@ -35,6 +35,33 @@ section > button > svg{
     fill: white;
     cursor: pointer;
 
+}
+
+/* iconos */
+section > button#play{
+    margin-top: auto;
+    flex-grow: 1;
+}
+
+section > button#mute{
+    margin-top: auto;
+    margin-right: 0.5rem;
+    flex-grow: 1;
+}
+
+section > button#rango{
+    margin-top: auto;
+    flex-grow: 1;
+}
+
+section > button#restart{
+    flex-grow: 3;
+    margin-top: auto;
+    margin-left: 30%;
+}
+
+section > p#timer{
+    margin: auto;
 }
 
 /* BARRA SLIDER */
