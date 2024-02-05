@@ -5,8 +5,9 @@ var play = document.getElementById("play");
 var muted = document.getElementById("mute");
 var vol = document.getElementById("rango");
 var restart = document.getElementById("restart");
+var stopvideo = document.getElementById("stop");
 
-/* REPRODUCIR O PAUSAR CANCIÓN */
+/* REPRODUCIR O PAUSAR VIDEO */
 
 play.addEventListener("click",()=>{
     let playIcon = document.getElementById("Bold");
@@ -41,6 +42,14 @@ vol.oninput = function(){
 /* REINICIAR EL VIDEO */
 
 restart.addEventListener("click",()=>{
+    video.currentTime = 0;
+    video.play();
+});
+
+/* PARAR EL VIDEO */
+
+stopvideo.addEventListener("click",()=>{
+    video.pause();
     video.currentTime = 0;
 });
 
