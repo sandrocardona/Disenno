@@ -25,7 +25,6 @@ h1{
 
 /* section del video */
 section {
-    border: red solid 1px;
     display: flex;
     flex-flow: column;
 }
@@ -34,8 +33,7 @@ section {
 section video{
     width: 75vh;
     margin: auto;
-    margin-bottom: 0.5rem;
-    border: 1px solid white;
+    margin-bottom: 0rem;
 }
 
 /* controles del video */
