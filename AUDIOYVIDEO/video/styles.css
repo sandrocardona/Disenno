@@ -1,3 +1,4 @@
+/* ===== GENERAL ===== */
 *{
   box-sizing: border-box;
   margin: 0;
@@ -15,32 +16,38 @@ h1{
   margin-bottom: 1rem;
 }
 
+.botones{
+    background: none;
+    border: none;
+}
+
+/* ===== VIDEO ===== */
+
+/* section del video */
 section {
     border: red solid 1px;
     display: flex;
     flex-flow: column;
 }
 
+/* ventana del video */
 section video{
-    width: 50vh;
+    width: 75vh;
     margin: auto;
-/*     margin-bottom: 1rem; */
+    margin-bottom: 0.5rem;
     border: 1px solid white;
 }
 
+/* controles del video */
 section div.reproductor{
-    width: 50vh;
+    width: 75vh;
     border: 1px solid white;
     padding: 1rem;
     margin: auto;
     display: flex;
 }
 
-.botones{
-    background: none;
-    border: none;
-}
-
+/* iconos general */
 section div.reproductor > button > svg{
     height: auto;
     width: 1rem;
@@ -49,35 +56,68 @@ section div.reproductor > button > svg{
 
 }
 
-/* iconos */
+/* ===== ICONOS ===== */
 
+/* boton play */
 section > div.reproductor > button#play{
     margin-top: auto;
     flex-grow: 1;
 }
 
+/* boton mute */
 section > div.reproductor > button#mute{
     margin-top: auto;
     margin-right: 0.5rem;
     flex-grow: 1;
 }
 
+/* rango volumen */
 section > div.reproductor > button#rango{
     margin-top: auto;
     flex-grow: 1;
 }
 
+/* boton reiniciar video */
 section > div.reproductor > button#restart{
     flex-grow: 3;
     margin-top: auto;
     margin-left: 30%;
 }
-
-section > div.reproductor > p#timer{
-    margin: auto;
+section > div.reproductor > button#rewind{
+    flex-grow: 1;
+    margin-top: auto;
 }
 
-/* BARRA SLIDER */
+section > div.reproductor > button#stop{
+    flex-grow: 1;
+    margin-top: auto;
+}
+
+section > div.reproductor > button#forward{
+    flex-grow: 1;
+    margin-top: auto;
+}
+
+section > div.reproductor > button#full-screen{
+    flex-grow: 1;
+    margin-top: auto;
+}
+
+/* tiempo de reproduccion */
+section > div.reproductor > p#timer{
+    margin: auto;
+    margin-left: 0.5rem;
+}
+
+section > div.reproductor > p#vid-duration{
+    margin: auto;
+    margin-left: 0.5rem;
+}
+
+
+/* ===== INPUT SLIDER ===== */
+
+/* barra slider */
 
 input[type=range] {
     -webkit-appearance: none;
@@ -99,7 +139,7 @@ input[type=range]::-webkit-slider-runnable-track {
     border: 0px solid #000101;
 }
 
-/* BOLA */
+/* bola */
 
 input[type=range]::-webkit-slider-thumb {
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
