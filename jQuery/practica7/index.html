@@ -12,8 +12,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-<!-- 	<link rel="stylesheet" type="text/css" href="estiloslodi.css"> -->
 	<link rel="stylesheet" type="text/css" href="estilosprueba.css">
+	<script src="./jq/jq-library-3.7.1.js"></script>
+	<script src="script.js"></script>
 </head>
 <body>
 	<div id="contenido">
@@ -23,17 +24,19 @@
 		</picture>
 		<!-- Menú principal -->
 		<nav id="menu-principal">
-			<label for="menu-hamburger">
-				<span>&#9776;</span>
-			</label>  
-			<input type="checkbox" id="menu-hamburger"/> <!--Para la hamburguesa-->
-			<ul id="menu"> 
-				<li><a href="#">TODO</a>
-				<li><a href="#">NUEVA COLECCIÓN</a>
-				<li><a href="#">NOVIA</a>
-				<li><a href="#">OUTLET</a>
-				<li><a id="cuenta" href="#">Mi Cuenta</a>
-			</ul>
+			<label for="hamburguer-icon">
+				<input id="hamburguer-icon" type="checkbox">
+					<span class="hamburguer-line"></span>
+					<span class="hamburguer-line"></span>
+					<span class="hamburguer-line"></span>
+					<ul id="menu"> 
+						<li><a href="#">TODO</a>
+						<li><a href="#">NUEVA COLECCIÓN</a>
+						<li><a href="#">NOVIA</a>
+						<li><a href="#">OUTLET</a>
+						<li><a id="cuenta" href="#">Mi Cuenta</a>
+					</ul>
+			</label>
 		</nav>
 		<!--Bloque de enlaces con iconos -->
 		<nav id="buscador">
