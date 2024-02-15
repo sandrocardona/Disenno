@@ -5,6 +5,12 @@ $(document).ready(function(){
 
     $(".noticia > img").mouseleave(function(){
         $("p").detach();
-        console.log("leaved")
     });
+
+    /* método hover */
+/*     $(".noticia > img").hover(function(){
+        $(this).parent().append("<p>" + $(this).attr("alt") + "</p>");
+    }, function(){
+        $("p").detach();
+    }); */
 });
