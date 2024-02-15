@@ -1,18 +1,42 @@
 $(document).ready(function(){
-    $(window).scroll(function(){
-        $('header').css("position","fixed");
-        $('header').css("width","100%");
-        $('header').css("background","white");
-        $('header').css("opacity","0.8");
-    })
 
-    $('#menu-principal').on({
-        mouseenter:function(){
-            $('label').css("background","black");
+    /* menu hamburguesa */
+    $("header > nav#menu-principal > label").hover(
+        function(){
+            $(this).css("background-color","black");
         },
-
-        mouseleave:function(){
-            $('label').css("background","lightslategray");
+        function(){
+            $(this).css("background-color","lightslategray");
         }
-    })
+    );
+
+    /* lupa busqueda */
+    $("header > nav#buscador > ul > li > a").hover(
+        function(){
+            $(this).css("color","lightslategray");
+        },
+        function(){
+            $(this).css("color","black");
+        }
+    );
+
+    /* logo lodi */
+    $("header > picture > img#logo").hover(
+        function(){
+            $(this).css("border","1px solid black");
+        },
+        function(){
+            $(this).css("border","none");
+        }
+    );
+
+    /* logo cesta */
+    $("header > nav#compra > ul > li > a").hover(
+        function(){
+            $(this).css("color","lightslategray");
+        },
+        function(){
+            $(this).css("color","black");
+        }
+    );
 })
