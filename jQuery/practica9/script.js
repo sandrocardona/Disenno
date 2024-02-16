@@ -4,7 +4,7 @@ $(document).ready(function(){
         if(colored){
             $(this).animate({"background-color":"black"})
         }else{
-            $(this).animate({"background-color":"white"})
+            $(this).animate({"background-color":"lightslategray"})
         }
         colored = !colored
     })
