@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método css() con varios atributos</title>
+    <script src="./jq/jq-library-3.7.1.js"></script>
+    <style>
+        div#mi-capa{
+            background-color: black;
+            border-radius: 0.4em;
+            color: white;
+            margin: 0;
+            padding: 1rem;
+            position: relative;
+            left: 0px;
+            width: 25%;
+        }
+        p{
+            margin: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#mi-capa").click(function(e){
+                $(this).css("width",function(i,value){
+                    var aumento = prompt("¿Cuanto quieres aumentar?","25");
+                    return(parseInt(value) + parseInt(aumento) + "px");
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="mi-capa">
+        <p>Esta es una capa creada para comprobar el funcionamiento del método css(). <br>
+        Haz click sobre la capa para cambiar varios atributos CSS que afectan a la misma</p>
+    </div>
+</body>
+</html>
