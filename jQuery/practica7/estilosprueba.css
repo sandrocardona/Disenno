@@ -34,9 +34,9 @@ header{
 
 /* MENÚ HAMBURGUESA */
 
-input{
+/* input{
     display: none;
-}
+} */
 
 label{
     display: inline-block;
@@ -96,7 +96,7 @@ header > nav#menu-principal > label > ul#menu{
 
 /* MOSTRAR MENU */
 
-header > nav#menu-principal > label > input#hamburguer-icon:checked ~ ul#menu{
+/* header > nav#menu-principal > label > ul#menu{
     display: flex;
     flex-flow: column;
     position: absolute;
@@ -105,10 +105,10 @@ header > nav#menu-principal > label > input#hamburguer-icon:checked ~ ul#menu{
     padding-left: 0.1rem;
     width: 50rem;
 }
-header > nav#menu-principal > label > input#hamburguer-icon:checked ~ ul#menu > li{
+header > nav#menu-principal > label > ul#menu > li{
     padding: 0.5rem;
     border-bottom: 1px solid white;
-}
+} */
 
 /* LOGO */
 

@@ -4,5 +4,9 @@ $(document).ready(function(){
         if(e.which === 13){
             $(".noticia").children("h3").show();
         }
+
+        if(e.which === 97){
+            $(".noticia").children("h3").hide();
+        }
     });
 });
