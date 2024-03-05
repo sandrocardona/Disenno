@@ -8,9 +8,8 @@ $(document).ready(function(){
             }, 1500);
 
             $("div#desplazable").animate({
-                left:"18rem"
+                left:"18rem",
             }, 1500);
         },
-
     })
 })
