@@ -148,7 +148,9 @@ $(document).ready(function() {
       
     }());
      // llamamos al constructor
-   SliderModule.init({duration:2000});
+
+     //duracion tiempo que tarda en cambiar de foto en el slider
+   SliderModule.init({duration:6000000});
   
   
             $("#slider > ul>li  > img").on({
